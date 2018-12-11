@@ -1,0 +1,53 @@
+class Board{
+  Cell[][] grid;
+  
+  Board(){
+    grid = new Cell[6][7];
+    for(int i = 0; i < grid.length; i++){
+      for(int j = 0; j <= grid[i].length ; j++)
+         grid[i][j] = new Cell();
+      
+    }
+    // initialize the grid to a 6 rows 7 columns 2D array.
+    
+    
+    //use nested for loop to initialize each Cell
+    //in the 2D array.
+    
+    
+    
+  }
+  void selectCell(int player, int row, int col){
+    // if the Cell at row,col is empty
+    // set that cell to belong to player variable
+    // and change value of isEmpty.
+    
+    
+  }
+  
+  void drawBoard(){
+    // use strokeWeight for thickness of lines
+    // and stroke() for color of lines
+    strokeWeight(4);
+    stroke(0);
+    float x; 
+    float y;
+     for (x=100;x<width;x++)
+       line(x,0,x,height);
+      for (y=100;y<height;y++)
+       line(0,y,width,y);
+    
+    // do two for loops to draw horizontal and vertical lines
+    // use line(x1,y1,x2,y2) to draw lines.
+    
+    
+    
+    
+    // use nested for loops to go to each Cell of 
+    // the 2D grid and draw red or or blue circle 
+    // according to the player set at that Cell.
+    
+  
+  
+  }
+}
